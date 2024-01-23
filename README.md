@@ -2,7 +2,12 @@
 
 This sample demonstrates how to build container images for ASP.NET Core web apps. See [.NET Docker Samples](../README.md) for more samples.
 
-> Note: .NET 8 container images use port `8080`, by default. Previous .NET versions used port `80`. The instructions for the sample assume the use of port `8080`.
+> Note: .NET 8 container images use port `8080`, by default. Previous .NET versions used port `80`. The instructions for the sample assume the use of port `8080`.  
+
+## Build  
+```bash
+docker buildx build --platform linux/amd64 -t alperreha/dotnet-http-sample:1.0.0 -f Dockerfile .
+```
 
 ## Run the sample image
 
